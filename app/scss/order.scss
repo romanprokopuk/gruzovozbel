@@ -1,0 +1,52 @@
+/* order */
+
+.order-wrap {
+  position: relative;
+  padding-top: $header-height;
+  background-color: rgba(38, 38, 38);
+  background-image: url("../images/bg-img-order.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    content: '';
+  }
+}
+/* .container__order {
+} */
+/* .order {
+} */
+.order-contant {
+  position: relative;
+  margin-top: 70px;
+  min-height: calc(85vh - $header-height);
+  z-index: 3;
+}
+.title-wrap {
+  width: 858px;
+  margin: 0 auto;
+}
+.title {
+  font-family: "Montserrat-Bold-700";
+  font-size: 60px;
+  text-align: center;
+  color: #fefefe;
+}
+.title__order {
+}
+.btn {
+}
+.btn__order {
+}
+.img-order-wrap {
+}
+.img {
+}
+.img__order {
+}
