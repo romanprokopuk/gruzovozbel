@@ -8,7 +8,8 @@
   }
 }
 
-.why {}
+.why {
+}
 
 .title-wrap__why {
   width: 100%;
@@ -20,7 +21,7 @@
 }
 
 .title__why {
-  font-family: 'Montserrat-Bold-700';
+  font-family: "Montserrat-Bold-700";
   font-size: 50px;
   line-height: 61px;
   color: #262626;
@@ -42,12 +43,13 @@
   }
 
   @media (max-width: 576px) {
-    font-size: 26px;
+    font-size: 29px;
     line-height: 40px;
   }
 }
 
-.why-contant-wrap {}
+.why-contant-wrap {
+}
 
 .why-contant {
   display: grid;
@@ -56,22 +58,6 @@
   grid-gap: 35px;
   width: min-content;
   margin: 0 auto;
-
-  &:hover .why-contant-elem {
-    background-color: #33A6FF;
-    box-shadow: 4px 4px 10px 4px rgba(51, 166, 255, 0.3), inset 0px 4px 4px #33A6FF;
-  }
-
-  &:hover path {
-    fill: #FEFEFE;
-  }
-
-  &:hover .why-contant-text {
-    font-family: 'Montserrat-Bold-700';
-    font-size: 18px;
-    line-height: 22px;
-    color: #FEFEFE;
-  }
 
   @media (max-width: 1200px) {
     grid-template-rows: repeat(2, 180px);
@@ -97,13 +83,64 @@
 }
 
 .why-contant-elem {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   padding: 5px;
-  background-color: #FEFEFE;
+  border: 0 solid;
+  border-radius: 12px;
+  background-color: #fefefe;
   box-shadow: inset 4px 4px 20px 4px rgba(183, 195, 214, 0.25);
+
+  &:hover {
+    background-color: #33a6ff;
+    box-shadow: 3px 3px 3px 3px rgba(51, 166, 255, 0.3), inset 0px 4px 4px #33a6ff;
+    cursor: pointer;
+  }
+
+  &:hover path {
+    fill: #fefefe;
+  }
+
+  &:hover .why-contant-text {
+    color: #fefefe;
+  }
+}
+
+.why-contant-elem-clarification {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 0 solid;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 3px 3px 3px 3px rgba(51, 166, 255, 0.3), inset 0px 4px 4px rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.text__clarification {
+  font-family: "Montserrat-Regular-400";
+  font-size: 18px;
+  line-height: 22px;
+  color: #262626;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .img-wrap__why-contant {
@@ -125,9 +162,19 @@ svg {
 }
 
 .why-contant-text {
-  font-family: 'Montserrat-Regular-400';
+  font-family: "Montserrat-Regular-400";
   font-size: 18px;
   line-height: 22px;
   color: #262626;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
